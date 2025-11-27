@@ -13,19 +13,44 @@ body {
 body {
   background-image: url("../img/sfondo.png");
 }
+
+a {
+  text-decoration: none;
+  color: #ac3071;
+}
+
+.bk-color {
+  background: linear-gradient(180deg, rgba(0, 156, 191, 1) 0%, rgba(10, 108, 135, 1) 100%);
+  color: white;
+}
 /* HEADER */
 header {
-  background: linear-gradient(180deg, rgba(0, 156, 191, 1) 0%, rgba(10, 108, 135, 1) 100%);
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
-  color: white;
   text-align: center;
-  /* padding: 10px; */
+  padding: 10px;
+  margin-bottom: 20px;
+  width: fit-content;
+  height: fit-content;
 }
+
 header img {
   width: 60%;
 }
+
 header ul {
   list-style-type: none;
+  padding: 0;
+}
+
+header ul li {
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header ul li a {
+  color: inherit;
+  font-weight: 600;
 }
 /* MAIN */
 main {
@@ -40,5 +65,12 @@ main {
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
+aside {
+  text-align: center;
+}
+.gray-bg {
+  text-align: center;
+  background-color: #e5e3e4;
+}
 
 /* FOOTER */
