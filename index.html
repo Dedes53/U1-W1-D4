@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header class="bk-color">
+    <header class="bk-color shadow">
       <img src="assets/img/logo.svg" alt="Logo Epicode" />
       <h3>EPICODE - IL BLOG DEI DEVELOPERS</h3>
       <ul>
@@ -32,7 +32,7 @@
       </ul>
     </header>
 
-    <main>
+    <main class="shadow">
       <article>
         <h1>Come creare un template per i post</h1>
         <p class="articleAuthor"><i class="fa-solid fa-pen"></i>di Mario Rossi - <i class="fa-solid fa-clock"></i>pubblicato il 25-10-2020</p>
@@ -102,16 +102,16 @@
           <a href="https://jigsaw.w3.org/css-validator/" target="_blank" alt="link per tool di valutazione online" class="bold">tool online</a>
           dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
         </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/sOnsyLAXfSI?si=y6cbuosLhP8BuOdH"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="videoContainer">
+          <iframe
+            src="https://www.youtube.com/embed/sOnsyLAXfSI?si=y6cbuosLhP8BuOdH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </article>
 
       <section class="gray-bg news">
@@ -119,33 +119,33 @@
         <p>Vuoi rimanere aggiornato sulle ultime novità? Iscriviti alla nostra newsletter.</p>
         <form action="">
           <input type="email" placeholder="Inserisci l'email" />
-          <button type="submit">Iscriviti!</button>
+          <button type="submit"><b>Iscriviti!</b></button>
         </form>
       </section>
 
-      <aside>
+      <aside class="articles">
         <h2>ARTICOLI CORRELATI</h2>
         <section class="gray-bg">
           <a href="" target="_blank" alt="Link per articolo: Validare il codice HTML" class="bold">Validare il codice HTML</a>
-          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="category"><i class="fa-solid fa-tag"></i>Categoria: develop</p>
           <p class="articleDate"><i class="fa-solid fa-calendar-days"></i>Data:18-9-2020</p>
         </section>
 
         <section class="gray-bg">
           <a href="" target="_blank" alt="Link per articolo: Correggere la sintassi" class="bold">Correggere la sintassi</a>
-          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="category"><i class="fa-solid fa-tag"></i>Categoria: develop</p>
           <p class="articleDate"><i class="fa-solid fa-calendar-days"></i>Data:16-9-2020</p>
         </section>
 
         <section class="gray-bg">
           <a href="" target="_blank" alt="Link per articolo: Meno Kb nella pagina" class="bold">Meno Kb nella pagina</a>
-          <p><i class="fa-solid fa-tag"></i>Categoria: ottimizzazione</p>
+          <p class="category"><i class="fa-solid fa-tag"></i>Categoria: ottimizzazione</p>
           <p class="articleDate"><i class="fa-solid fa-calendar-days"></i>Data:30-9-2020</p>
         </section>
       </aside>
     </main>
 
-    <footer>
+    <footer class="shadow">
       <p>Blog Epicode © 2021</p>
       <p>
         Testata online di Mario Rossi, registrata con prot. n.213/2028 - via Einaudi 2 - Milano. <br />

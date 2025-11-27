@@ -28,23 +28,27 @@ a {
   background: linear-gradient(180deg, rgba(0, 156, 191, 1) 0%, rgba(10, 108, 135, 1) 100%);
   color: white;
 }
+
+.shadow {
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.479);
+}
 /* HEADER */
 header {
-  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 10px;
+  padding: 40px;
   margin-bottom: 20px;
   width: fit-content;
   height: fit-content;
 }
 
 header img {
-  width: 60%;
+  width: 80%;
 }
 
 header ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 header ul li {
@@ -61,7 +65,6 @@ header ul li a {
 /* MAIN */
 main {
   background-color: white;
-  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   font-size: 1.2rem;
 }
@@ -74,7 +77,6 @@ h1 {
 main p {
   font-size: 20px;
 }
-/* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
 table {
@@ -104,21 +106,87 @@ table tr:nth-child(even) {
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
 }
+
+/* VIDEO */
+.videoContainer {
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+}
+
+.videoContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* FORM */
+.news {
+  padding: 20px;
+  margin-top: 30px;
+}
+.news h2 {
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.news form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.news form input {
+  padding: 5px 10px;
+  width: 65%;
+  border: 0;
+  border-bottom: 2px dotted black;
+  font-size: 20px;
+}
+
+.news form button {
+  padding: 5px 10px;
+  margin-left: 2px;
+  background-color: #3067cb;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+}
 
 /* ELEMENTI NELL' ASIDE */
-aside {
+.articles {
   text-align: center;
 }
-.gray-bg {
+
+.articles h2 {
+  font-weight: 500;
+  margin: 0;
   text-align: center;
-  background-color: #e5e3e4;
+  margin: 30px 0 20px 0;
 }
+
+.articles section {
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: start;
+  border: 1px solid #bcbcbc;
+}
+.category {
+  margin: 0;
+}
+
 .articleDate {
-  font-size: 12px;
-  color: gray;
-  margin-top: -10px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: end;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.gray-bg {
+  background-color: #e5e3e4;
 }
 
 /* FOOTER */
