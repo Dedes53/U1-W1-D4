@@ -12,13 +12,18 @@ body {
 }
 body {
   background-image: url("../img/sfondo.png");
+  background-size: contain;
 }
 
 a {
-  text-decoration: none;
+  color: #00a1ce;
+}
+.textPink {
   color: #ac3071;
 }
-
+.bold {
+  font-weight: 600;
+}
 .bk-color {
   background: linear-gradient(180deg, rgba(0, 156, 191, 1) 0%, rgba(10, 108, 135, 1) 100%);
   color: white;
@@ -51,12 +56,13 @@ header ul li {
 header ul li a {
   color: inherit;
   font-weight: 600;
+  text-decoration: none;
 }
 /* MAIN */
 main {
   background-color: white;
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px 10px;
+  padding: 15px 20px;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
@@ -74,3 +80,12 @@ aside {
 }
 
 /* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  padding: 5px;
+  padding-bottom: 15px;
+  background: linear-gradient(180deg, rgba(0, 86, 101, 1) 0%, rgba(49, 59, 56, 1) 100%);
+}

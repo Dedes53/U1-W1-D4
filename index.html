@@ -20,17 +20,26 @@
       <img src="assets/img/logo.svg" alt="Logo Epicode" />
       <h3>EPICODE - IL BLOG DEI DEVELOPERS</h3>
       <ul>
-        <li><a href="" alt="home">&#xf101;HOME&#xf100;</a></li>
-        <li><a href="" alt="articoli">&#xf101;ARTICOLI&#xf100;</a></li>
-        <li><a href="" alt="lavora con noi">&#xf101;LAVORA CON NOI&#xf100;</a></li>
+        <li>
+          <a href="" alt="home"><i class="fa-solid fa-angles-right"></i>HOME<i class="fa-solid fa-angles-left"></i></a>
+        </li>
+        <li>
+          <a href="" alt="articoli"><i class="fa-solid fa-angles-right"></i>ARTICOLI<i class="fa-solid fa-angles-left"></i></a>
+        </li>
+        <li>
+          <a href="" alt="lavora con noi"><i class="fa-solid fa-angles-right"></i>LAVORA CON NOI<i class="fa-solid fa-angles-left"></i></a>
+        </li>
       </ul>
     </header>
 
     <main>
       <article>
         <h1>Come creare un template per i post</h1>
-        <p>di Mario Rossi - pubblicato il 25-10-2020</p>
-        <p>La prima cosa da fare e suddividere in blocchi logici la pagina, identificando le <span>parti comuni</span> da applicare a tutte le pagine</p>
+        <p><i class="fa-solid fa-pen"></i>di Mario Rossi - <i class="fa-solid fa-clock"></i>pubblicato il 25-10-2020</p>
+        <p>
+          La prima cosa da fare e suddividere in blocchi logici la pagina, identificando le <span class="textPink bold">parti comuni</span> da applicare a tutte
+          le pagine
+        </p>
         <p>Le varie aree saranno quindi suddivise in:</p>
         <ul>
           <li>Contenuti di intestazione del tag <span>&lt;header&gt;</span></li>
@@ -38,8 +47,8 @@
           <li>Contenuti di fine pagina comuni, da inserire nel tag <span>&lt;footer&gt;</span></li>
         </ul>
         <p>
-          Formattazione del codice Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò passi
-          saranno:
+          Formattazione del codice Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
+          <span class="textPink bold">selezionare con i CSS</span>. Perciò passi saranno:
         </p>
         <ol>
           <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
@@ -88,12 +97,8 @@
         </table>
 
         <p>
-          Un test di validazione potrà essere fatto tramite il<a
-            href="https://jigsaw.w3.org/css-validator/"
-            target="_blank"
-            alt="link per tool di valutazione online"
-            >tool online</a
-          >
+          Un test di validazione potrà essere fatto tramite il
+          <a href="https://jigsaw.w3.org/css-validator/" target="_blank" alt="link per tool di valutazione online" class="bold">tool online</a>
           dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
         </p>
         <iframe
@@ -120,30 +125,30 @@
       <aside>
         <h2>ARTICOLI CORRELATI</h2>
         <section class="gray-bg">
-          <a href="" target="_blank" alt="Link per articolo: Validare il codice HTML">Validare il codice HTML</a>
-          <p>Categoria: develop</p>
-          <p>Data:18-9-2020</p>
+          <a href="" target="_blank" alt="Link per articolo: Validare il codice HTML" class="bold">Validare il codice HTML</a>
+          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="articleDate">Data:18-9-2020</p>
         </section>
 
         <section class="gray-bg">
-          <a href="" target="_blank" alt="Link per articolo: Correggere la sintassi">Correggere la sintassi</a>
-          <p>Categoria: develop</p>
-          <p>Data:16-9-2020</p>
+          <a href="" target="_blank" alt="Link per articolo: Correggere la sintassi" class="bold">Correggere la sintassi</a>
+          <p><i class="fa-solid fa-tag"></i>Categoria: develop</p>
+          <p class="articleDate">Data:16-9-2020</p>
         </section>
 
         <section class="gray-bg">
-          <a href="" target="_blank" alt="Link per articolo: Meno Kb nella pagina">Meno Kb nella pagina</a>
-          <p>Categoria: ottimizzazione</p>
-          <p>Data:30-9-2020</p>
+          <a href="" target="_blank" alt="Link per articolo: Meno Kb nella pagina" class="bold">Meno Kb nella pagina</a>
+          <p><i class="fa-solid fa-tag"></i>Categoria: ottimizzazione</p>
+          <p class="articleDate">Data:30-9-2020</p>
         </section>
       </aside>
     </main>
 
-    <footer class="bk-color">
+    <footer>
       <p>Blog Epicode © 2021</p>
       <p>
         Testata online di Mario Rossi, registrata con prot. n.213/2028 - via Einaudi 2 - Milano. <br />
-        P.IVA 00112233. <a href="mailto:info@epoicode.school">info@epoicode.school</a>
+        P.IVA 00112233. <a href="mailto:info@epoicode.school" class="textPink bold">info@epoicode.school</a>
       </p>
     </footer>
   </body>
