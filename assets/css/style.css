@@ -63,11 +63,47 @@ main {
   background-color: white;
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
+  font-size: 1.2rem;
+}
+h1 {
+  font-weight: 600;
+}
+.articleAuthor {
+  color: rgba(128, 128, 128, 0.74);
+}
+main p {
+  font-size: 20px;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
-
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3567c9;
+}
+table th {
+  background-color: #3567c9;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  border: 1px solid rgb(255, 255, 255);
+}
+table caption {
+  font-style: italic;
+}
+table td {
+  padding: 8px;
+  text-align: center;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
@@ -77,6 +113,12 @@ aside {
 .gray-bg {
   text-align: center;
   background-color: #e5e3e4;
+}
+.articleDate {
+  font-size: 12px;
+  color: gray;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
