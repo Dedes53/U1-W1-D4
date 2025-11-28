@@ -1,44 +1,59 @@
-/* IMPOSTAZIONI GENERALI */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* RESET BASE */
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
   padding: 10px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
+
+/* STILI GLOBALI */
 body {
-  background-image: url("../img/sfondo.png");
+  background: url("../img/sfondo.png");
   background-size: contain;
 }
 
 a {
   color: #00a1ce;
 }
+
 .textPink {
   color: #ac3071;
 }
-.bold {
+
+.bold,
+header ul li,
+header ul li a {
   font-weight: 600;
 }
+
 .bk-color {
-  background: linear-gradient(180deg, rgba(0, 156, 191, 1) 0%, rgba(10, 108, 135, 1) 100%);
-  color: white;
+  background: linear-gradient(180deg, rgba(0, 156, 191, 1), rgba(10, 108, 135, 1));
+  color: #fff;
 }
 
 .shadow {
-  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.479);
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.48);
 }
+
+.articleAuthor {
+  color: rgba(128, 128, 128, 0.74);
+}
+
+.gray-bg {
+  background: #e5e3e4;
+}
+
 /* HEADER */
 header {
   text-align: center;
   padding: 40px;
   margin-bottom: 20px;
-  width: fit-content;
-  height: fit-content;
 }
 
 header img {
@@ -46,34 +61,32 @@ header img {
 }
 
 header ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 header ul li {
   margin: 0 15px;
-  font-weight: 600;
   cursor: pointer;
 }
 
 header ul li a {
   color: inherit;
-  font-weight: 600;
   text-decoration: none;
 }
+
 /* MAIN */
 main {
-  background-color: white;
+  background: #fff;
   padding: 15px 20px;
   font-size: 1.2rem;
 }
+
 h1 {
   font-weight: 600;
 }
-.articleAuthor {
-  color: rgba(128, 128, 128, 0.74);
-}
+
 main p {
   font-size: 20px;
 }
@@ -82,90 +95,93 @@ main p {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-bottom: 2px solid #3567c9;
 }
-table th {
-  background-color: #3567c9;
-  color: white;
+
+th {
+  background: #3567c9;
+  color: #fff;
   padding: 10px;
+  border: 1px solid #fff;
   text-align: center;
-  font-weight: normal;
-  border: 1px solid rgb(255, 255, 255);
+  font-weight: 400;
 }
-table caption {
-  font-style: italic;
-}
-table td {
+
+td {
   padding: 8px;
   text-align: center;
 }
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-  border-top: 1px solid #cecece;
-  border-bottom: 1px solid #cecece;
+
+caption {
+  font-style: italic;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+  border: 1px solid #cecece;
 }
 
 /* VIDEO */
 .videoContainer {
-  text-align: center;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   margin: 0 auto;
+  text-align: center;
 }
 
 .videoContainer iframe {
   width: 100%;
   height: 100%;
   border: 0;
+  border-radius: 10px;
 }
 
 /* FORM */
 .news {
   padding: 20px;
   margin-top: 30px;
+  text-align: center;
 }
+
 .news h2 {
   font-weight: 500;
   margin: 0;
-  text-align: center;
 }
 
 .news form {
-  text-align: center;
   margin-top: 15px;
 }
 
-.news form input {
+.news input,
+.news button {
   padding: 5px 10px;
-  width: 65%;
-  border: 0;
-  border-bottom: 2px dotted black;
   font-size: 20px;
 }
 
-.news form button {
-  padding: 5px 10px;
+.news input {
+  width: 65%;
+  border: 0;
+  border-bottom: 2px dotted #000;
+}
+
+.news button {
   margin-left: 2px;
-  background-color: #3067cb;
-  color: white;
-  border: none;
-  font-size: 20px;
-  font-weight: 550;
+  background: #3067cb;
+  color: #fff;
+  border: 0;
+  font-weight: 600;
   cursor: pointer;
 }
 
-/* ELEMENTI NELL' ASIDE */
+/* ASIDE ARTICOLI */
 .articles {
   text-align: center;
 }
 
 .articles h2 {
   font-weight: 500;
-  margin: 0;
-  text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 20px;
 }
 
 .articles section {
@@ -174,19 +190,17 @@ table tr:nth-child(even) {
   text-align: start;
   border: 1px solid #bcbcbc;
 }
+
 .category {
   margin: 0;
+  font-size: 15px;
 }
 
 .articleDate {
   font-size: 15px;
   text-align: end;
-  margin-bottom: 0px;
   margin-top: 20px;
-}
-
-.gray-bg {
-  background-color: #e5e3e4;
+  margin-bottom: 0px;
 }
 
 /* FOOTER */
@@ -194,8 +208,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: white;
-  padding: 5px;
-  padding-bottom: 15px;
-  background: linear-gradient(180deg, rgba(0, 86, 101, 1) 0%, rgba(49, 59, 56, 1) 100%);
+  color: #fff;
+  padding: 5px 5px 15px;
+  background: linear-gradient(180deg, rgba(0, 86, 101, 1), rgba(49, 59, 56, 1));
 }
